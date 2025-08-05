@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, section, footer {
+      margin-bottom: 40px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content Showcase & Form Practice</h1>
+    <p>This page demonstrates semantic HTML5 elements, media embedding, tables, lists, and a feature-rich HTML5 form using native validation.</p>
+  </header>
+
+  <section>
+    <h2>📝 Lists</h2>
+
+    <h3>Top 3 Programming Languages (Ordered List)</h3>
+    <ol>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>HTML & CSS</li>
+    </ol>
+
+    <h3>Development Tools (Unordered List)</h3>
+    <ul>
+      <li>VS Code</li>
+      <li>Git & GitHub</li>
+      <li>Chrome DevTools</li>
+    </ul>
+
+    <h3>Tech Terms (Definition List)</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language used to structure web pages.</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets used to style web pages.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>📊 Table</h2>
+    <p>Here's a table of sample courses and their durations:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Development</td>
+          <td>8 Weeks</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>UI/UX Design</td>
+          <td>6 Weeks</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Data Science</td>
+          <td>12 Weeks</td>
+          <td>Advanced</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎥 Embedded Media</h2>
+
+    <h3>Image</h3>
+    <img src="TheChosen.jpg" alt="An Image of Me" width="300px" height="300px" />
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="EMPEROR-OF-THE-UNIVERSE-DUNSIN-OYEKAN-FT-THEOPHILUS-SUNDAY-2.mp3" type="audio/mp3"  />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>📬 Contact Form</h2>
+    <form action="#" method="post" novalidate>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe" />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="08012345678" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="course">Interested Course *</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select a Course --</option>
+          <option value="web">Web Development</option>
+          <option value="design">UI/UX Design</option>
+          <option value="data">Data Science</option>
+        </select>
+
+        <label for="experience">Tell us about your experience</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Your experience..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms</legend>
+        <label>
+          <input type="checkbox" name="agree" required />
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment | TheChosen&trade;</p>
+  </footer>
+
+</body>
+</html>
